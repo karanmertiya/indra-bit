@@ -33,7 +33,7 @@ if _tok:
 
 MODEL_ID      = "meta-llama/Meta-Llama-3-8B"
 GROUP_SIZE    = 128
-TIER_FP16_PCT = 0.20   # top 20% most error-prone rows stay FP16
+TIER_FP16_PCT = 0.05   # top 5% most error-prone rows stay FP16
 
 # ==============================================================================
 # 1. CUDA GEMV KERNEL  — decodes INT4 in registers, never writes FP16 matrix
